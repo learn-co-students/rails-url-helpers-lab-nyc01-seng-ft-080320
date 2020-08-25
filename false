@@ -1,0 +1,3 @@
+      invoke  active_record
+      remove    db/migrate/20200825012345_add_active_to_students.rb
+      create    db/migrate/20200825012626_add_active_to_students.rb
