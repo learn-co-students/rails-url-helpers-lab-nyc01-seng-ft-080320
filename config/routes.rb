@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :students, only: [:index, :show]
+  
+  get '/students/:id/activate', to: 'students#activate', as: 'activate_student'# i had this as yohohoho not realizing the repsec was legit checking it for an exact name lol
 end
